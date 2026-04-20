@@ -142,8 +142,8 @@
             // 首页
             filePath = `/index${CONFIG.fileExtension}`;
         } else {
-            // 静态页面
-            filePath = `/pages/${page}${CONFIG.fileExtension}`;
+            // 静态页面 - 现在在根目录，没有.html扩展名（Cloudflare自动处理）
+            filePath = `/${page}`;
         }
         
         // 使用路径或生成路径
@@ -298,7 +298,7 @@
         const pagesToPreload = ['gao-duan', 'bi-keng', 'ji-shi', 'jia-ge', 'xin-shou', 'faq'];
         
         pagesToPreload.forEach(page => {
-            const filePath = `/pages/${page}${CONFIG.fileExtension}`;
+            const filePath = `/${page}`;
             fetch(filePath).then(response => {
                 if (response.ok) {
                     return response.text();
