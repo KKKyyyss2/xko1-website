@@ -1,0 +1,10 @@
+# SPA路由：排除静态文件，其他都重定向到index.html
+/*                    /index.html   200
+!/style.css          /style.css    200
+!/spa.js             /spa.js       200
+!/seo/*              /seo/*        200
+!/pages/*            /pages/*      200
+!/articles/*         /articles/*   200
+!/components/*       /components/* 200
+!/favicon.ico        /favicon.ico  200
+!/og-image.jpg       /og-image.jpg 200
