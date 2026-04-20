@@ -1,0 +1,18 @@
+# 金边会所导航 - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://xko1.com/sitemap.xml
+
+# 禁止爬取临时文件
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cache/
+
+# 允许爬取所有页面（包括文章）
+Allow: /articles/
+Allow: /pages/
+
+# 爬取延迟建议（可选）
+Crawl-delay: 1
